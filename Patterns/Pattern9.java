@@ -3,9 +3,9 @@ class Pattern9
     public static void main(String[] args) 
     {
         int rows = 5;
-        int one = 1;
-        int zero = 0; 
-        for(int i = 0 ; i<5; i++)
+        // int one = 1;
+        // int zero = 0; 
+        for(int i = 0 ; i<rows; i++)
         {
             for(int j = 0 ; j<=i ; j++)
             {
