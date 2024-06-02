@@ -13,10 +13,12 @@ class GCD
         if(n1 == n2)
         {
             System.out.println("Both Numbers Are Same!!");
+            scanner.close();
             return;
         }
         int gcd  = gcd(n1,n2);
         System.out.println("GCD: "+gcd);
+        scanner.close();
     }
 
     public static int gcd(int n1,int n2)

@@ -33,6 +33,7 @@ class Array2
         }
         System.out.println("Maximum Number : " + max);
         System.out.println("Minimum Number : " + min);
+        scanner.close();
 
 
 

@@ -17,6 +17,7 @@ class Power
 
         int power = power(n,p);
         System.out.println("Power : "+power);
+        scanner.close();
     }
     public static int power(int num,int p)
     {
@@ -26,6 +27,7 @@ class Power
             mult = mult * num;
         }
         return mult;
+
 
 
     }

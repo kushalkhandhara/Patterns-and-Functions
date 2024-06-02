@@ -37,6 +37,7 @@ class Array4
         {
             System.out.println("array is not in ascending order");
         }
+        scanner.close();
 
     }
 }

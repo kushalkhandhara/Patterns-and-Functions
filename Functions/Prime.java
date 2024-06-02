@@ -9,7 +9,9 @@ class Prime
         if(n==0)
         {
             System.out.println("It is Not Prime Not a Composite Number");
+            scanner.close();
             return;
+            
         }
         boolean prime  = isPrime(n);
         if(prime)
@@ -20,6 +22,7 @@ class Prime
         {
             System.out.println(n + " is not Prime number");
         }
+        scanner.close();
     }
     public static boolean isPrime(int num)
     {

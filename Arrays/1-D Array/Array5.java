@@ -31,6 +31,7 @@ class Array5
             }
 
         }
+        scanner.close();
 
     }
 

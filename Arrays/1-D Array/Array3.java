@@ -35,6 +35,6 @@ class Array3
         {
             System.out.println(arr[i]);
         }
-        
+        scanner.close();
     }
 }
