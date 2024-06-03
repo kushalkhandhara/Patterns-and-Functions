@@ -1,6 +1,6 @@
 import java.util.*;
 // Decimal to Binary
-public class Binary4 
+public class DecimalToBinary 
 {
     public static void  decimaltoBinary(int n)
     {

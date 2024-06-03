@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Binary3 
+public class BinaryToDecimal 
 {
     public static int binarytoNum(String bin)
     {
