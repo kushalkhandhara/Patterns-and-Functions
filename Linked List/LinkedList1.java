@@ -99,10 +99,50 @@ public class LinkedList1
         secondLast.next = null;
     }
 
+    // To get Size of Linked list
     public void  getSize()
     {
        System.out.println("Size : " + size);
     }
+
+    // Reverse Linked list
+    public void reverse()
+    {
+        if(head==null || head.next==null)
+        {
+            return;
+        }
+
+        Node prevNode = head;
+        Node currNode = head.next;
+        while(currNode != null)
+        {
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            // update
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head.next = null;
+        head = prevNode;
+    }
+
+    // Reverse a List by Recursion
+    public Node reverseRecursion(Node head)
+    {
+        if(head == null || head.next == null)
+        {
+            return head;
+        }
+
+        Node newHead = reverseRecursion(head.next);
+        head.next.next = head;
+        head.next = null;
+        
+        return newHead;
+    }
+
 
     public static void main(String[] args)
     {
@@ -111,11 +151,20 @@ public class LinkedList1
         list.addFirst("b");
         list.addFirst("c");
         list.addLast("d");
+
         list.deleteFirst();
         list.deleteLast();
         list.addFirst("c");
         list.addLast("d");
+        
         list.printList();
+
         list.getSize();
+
+        list.reverse();
+        list.printList();
+
+        list.head = list.reverseRecursion(list.head);
+        list.printList();
     }
 }
